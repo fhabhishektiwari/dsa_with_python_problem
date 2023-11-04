@@ -156,3 +156,116 @@
 #         col=col+1
 #     print("")
 #     row=row+1
+
+# =================================================
+"""
+1
+2 1
+3 2 1
+4 3 2 1
+"""
+# num_of_row = int(input("Enter a number: "))
+# row = 1
+# while row<=num_of_row:
+#     col=1
+#     while col<=row:
+#         print(row-col+1,end=" ")
+#         col=col+1
+#     print("")
+#     row=row+1
+
+# # =================================================
+# """
+# A A A
+# B B B
+# C C C
+# """
+# num_of_row = int(input("Enter a number: "))
+# for i in range(num_of_row):
+#     current_char = chr(ord('A') + i)
+#     for j in range(num_of_row):
+#         print(current_char, end=" ")
+#     print()
+
+# =================================================
+"""
+A B C
+A B C
+A B C
+"""
+# num_of_row = int(input("Enter a number: "))
+# for i in range(num_of_row):
+#     for j in range(num_of_row):
+#         current_char = chr(ord('A') + j)
+#         print(current_char, end=" ")
+#     print()
+
+# =================================================
+"""
+A B C
+D E F
+G H I
+"""
+# num_of_row = int(input("Enter a number: "))
+# current_char='A'
+# for i in range(num_of_row):
+#     for j in range(num_of_row):
+#         print(current_char, end=" ")
+#         current_char = chr(ord(current_char) + 1)
+#     print()
+
+# =================================================
+"""
+A B C
+B C D
+C D E
+"""
+# num_of_row = int(input("Enter a number: "))
+#
+# for i in range(num_of_row):
+#     current_char = chr(ord('A')+i)
+#     for j in range(num_of_row):
+#         print(chr(ord(current_char)+j), end=" ")
+#     print()
+
+# =================================================
+"""
+A 
+B B
+C C C
+"""
+# num_of_row = int(input("Enter a number: "))
+# for i in range(num_of_row):
+#     current_char=chr(ord('A')+i)
+#     for j in range(i+1):
+#         print(current_char, end=" ")
+#     print()
+
+# =================================================
+"""
+A 
+B B
+C C C
+"""
+# num_of_row = int(input("Enter a number: "))
+# current_char='A'
+# for i in range(num_of_row):
+#     for j in range(i+1):
+#         print(current_char, end=" ")
+#         current_char = chr(ord(current_char) + 1)
+#     print()
+
+# =================================================
+"""
+A 
+B C
+C D E
+D E F G
+"""
+num_of_row = int(input("Enter a number: "))
+for i in range(num_of_row):
+    current_char = chr(ord('A') + i)
+    for j in range(i + 1):
+        print(current_char, end=" ")
+        current_char = chr(ord(current_char) + 1)
+    print()
